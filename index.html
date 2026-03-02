@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Adarsh | Professional Minecraft Replay Maker</title>
+  <meta name="title" content="Adarsh | Professional Minecraft Replay Maker">
+  <meta name="description" content="Adarsh – Premium cinematic Minecraft replay editor. Specializing in high-level effects, custom replays, and professional editing.">
+  <meta name="theme-color" content="#0a0710">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adarsh | Professional Minecraft Replay Maker">
+  <meta property="og:description" content="Cinematic Minecraft replays with premium editing and high-level effects.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Adarsh | Professional Minecraft Replay Maker">
+  <meta property="twitter:description" content="Cinematic Minecraft replays with premium editing and high-level effects.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/play.css">
+</head>
+<body>
+
+  <!-- 3D Galaxy Background Canvas (alpha enabled for overlay) -->
+  <canvas id="galaxy-bg" aria-hidden="true"></canvas>
+
+  <!-- Custom Cursor (optional, controlled by cursor.js) -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- FIXED NAVIGATION BAR -->
+  <header class="site-header" role="banner">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="logo" aria-label="Adarsh logo">
+          <span class="logo-icon" aria-hidden="true">🎬</span>
+          <span class="logo-text">Adarsh</span>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" role="list">
+          <li role="listitem"><a href="#home" class="nav-link" aria-label="Navigate to Home section">Home</a></li>
+          <li role="listitem"><a href="#projects" class="nav-link" aria-label="Navigate to Projects section">Projects</a></li>
+          <li role="listitem"><a href="#contact" class="nav-link" aria-label="Navigate to Contact section">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger Menu (optional, styled via CSS) -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Dropdown (hidden by default) -->
+      <div class="mobile-nav-dropdown" aria-hidden="true">
+        <ul class="mobile-nav-links" role="list">
+          <li role="listitem"><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li role="listitem"><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li role="listitem"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section" aria-label="Hero section" role="region">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Floating particles container (for JS animations) -->
+          <div class="hero-particles" aria-hidden="true"></div>
+          
+          <h1 class="hero-title" id="hero-title">
+            Adarsh <span class="hero-title-accent"></span> <span class="hero-title-gradient">Professional Minecraft Replay Maker</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Cinematic Minecraft Replays · Premium Editing · High-Level Effects
+          </p>
+          
+          <div class="hero-cta" role="group" aria-label="Call to action buttons">
+            <a href="#projects" class="btn btn-primary" aria-label="View Adarsh's replay projects">
+              <span class="btn-text">View Projects</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary" aria-label="Watch demo replay">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+              <span class="btn-text">Watch Demo</span>
+            </a>
+          </div>
+          
+          
+        </div>
+      </div>
+      
+      <!-- Scroll indicator (optional) -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-text">Scroll</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (2 rows × 3 columns) -->
+    <section id="projects" class="projects-section" aria-label="Projects section" role="region">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Replays</h2>
+          <p class="section-subtitle">Cinematic masterpieces crafted with precision</p>
+        </div>
+        
+        <div class="projects-grid" role="grid" aria-label="Replay projects grid">
+          
+          <!-- Replay 1 -->
+          <article class="project-card" role="gridcell" aria-label="Replay 1: Mountain Adventure">
+            <div class="card-thumbnail" data-video="assests/video/aloo.mp4">
+              <img src="assests/Screenshot 2025-10-05 225817.png" alt="Mountain Adventure replay thumbnail" class="thumbnail-img" loading="lazy">
+              <div class="thumbnail-overlay">
+                <button class="play-button" aria-label="Play Replay 1: Mountain Adventure">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="card-title">Replay 1</h3>
+            <span class="card-meta"></span>
+          </article>
+          
+          <!-- Replay 2 -->
+          <article class="project-card" role="gridcell" aria-label="Replay 2: Forest Cinematic">
+            <div class="card-thumbnail" data-video="assests/video/aloo.mp4">
+              <img src="assests/Screenshot 2025-10-05 225817.png" alt="Forest Cinematic replay thumbnail" class="thumbnail-img" loading="lazy">
+              <div class="thumbnail-overlay">
+                <button class="play-button" aria-label="Play Replay 2: Forest Cinematic">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="card-title">Replay 2</h3>
+            <span class="card-meta"></span>
+          </article>
+          
+          <!-- Replay 3 -->
+          <article class="project-card" role="gridcell" aria-label="Replay 3: Epic Build">
+            <div class="card-thumbnail" data-video="assests/video/aloo.mp4">
+              <img src="assests/Screenshot 2025-10-05 225817.png" alt="Epic Build replay thumbnail" class="thumbnail-img" loading="lazy">
+              <div class="thumbnail-overlay">
+                <button class="play-button" aria-label="Play Replay 3: Epic Build">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="card-title">Replay 3</h3>
+            <span class="card-meta"></span>
+          </article>
+          
+          <!-- Replay 4 -->
+          <article class="project-card" role="gridcell" aria-label="Replay 4: Night Glow">
+            <div class="card-thumbnail" data-video="assests/video/aloo.mp4">
+              <img src="assests/Screenshot 2025-10-05 225817.png" alt="Night Glow replay thumbnail" class="thumbnail-img" loading="lazy">
+              <div class="thumbnail-overlay">
+                <button class="play-button" aria-label="Play Replay 4: Night Glow">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="card-title">Replay 4</h3>
+            <span class="card-meta"></span>
+          </article>
+          
+          <!-- Replay 5 -->
+          <article class="project-card" role="gridcell" aria-label="Replay 5: Waterfall Escape">
+            <div class="card-thumbnail" data-video="assests/video/aloo.mp4">
+              <img src="assests/Screenshot 2025-10-05 225817.png" alt="Waterfall Escape replay thumbnail" class="thumbnail-img" loading="lazy">
+              <div class="thumbnail-overlay">
+                <button class="play-button" aria-label="Play Replay 5: Waterfall Escape">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="card-title">Replay 5</h3>
+            <span class="card-meta"></span>
+          </article>
+          
+          <!-- Replay 6 -->
+          <article class="project-card" role="gridcell" aria-label="Replay 6: Sunset Flight">
+            <div class="card-thumbnail" data-video="assests/video/aloo.mp4">
+              <img src="assests/Screenshot 2025-10-05 225817.png" alt="Sunset Flight replay thumbnail" class="thumbnail-img" loading="lazy">
+              <div class="thumbnail-overlay">
+                <button class="play-button" aria-label="Play Replay 6: Sunset Flight">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <h3 class="card-title">Replay 6</h3>
+            <span class="card-meta"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section" aria-label="Contact section" role="region">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Connect with Me</h2>
+          <p class="section-subtitle">Let's collaborate on your next project</p>
+        </div>
+        
+        <div class="contact-container">
+          <!-- Discord Card (glass style) -->
+          <div class="contact-card glass-card" role="article" aria-label="Discord contact information">
+            <div class="card-icon" aria-hidden="true">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Discord</h3>
+              <div class="contact-info">
+                <span class="contact-label">Username:</span>
+                <code class="contact-value" id="discord-id">adyxor</code>
+              </div>
+              <button class="copy-button" aria-label="Copy Discord username to clipboard" data-clipboard-target="#discord-id">
+                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Instagram Card (glass style) -->
+          <div class="contact-card glass-card" role="article" aria-label="Instagram contact information">
+            <div class="card-icon" aria-hidden="true">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Instagram</h3>
+              <div class="contact-info">
+                <span class="contact-label">Handle:</span>
+                <span class="contact-value" id="instagram-handle">@adyxor</span>
+              </div>
+              <a href="https://www.instagram.com/adyxor/" target="_blank" rel="noopener noreferrer" class="follow-button" aria-label="Follow Adarsh on Instagram">
+                <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                <span class="button-text">Follow</span>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Optional Email / Role Info -->
+          <div class="contact-card glass-card" role="article" aria-label="Email and role information">
+            <div class="card-icon" aria-hidden="true">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Email</h3>
+              <div class="contact-info">
+                <span class="contact-label">Work:</span>
+                <span class="contact-value" id="email-address">adarsh.replay@proton.me</span>
+              </div>
+              <button class="copy-button" aria-label="Copy email address to clipboard" data-clipboard-target="#email-address">
+                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-copyright">
+        <p>&copy; 2026 Adarsh. All rights reserved. | Professional Minecraft Replay Editor</p>
+      </div>
+      
+      <div class="footer-social" role="list" aria-label="Social media links">
+        <a href="https://www.instagram.com/adyxor/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://discord.gg/adarsh" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Join Discord server">
+          <i class="fa-brands fa-discord" aria-hidden="true"></i>
+        </a>
+        <a href="https://youtube.com/@adyxor1?si=SXxLeeVsrnDAa169" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="#home" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS (placeholders for functionality) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/hero-3d.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/block.js"></script>
+  <script src="js/play.js"></script>
+  
+  <!-- Clipboard copy functionality placeholder (will be implemented in main.js) -->
+  <script>
+    // Note: Full clipboard functionality will be implemented in main.js
+    // This is just a placeholder to ensure data-clipboard-target attributes work
+    console.log('Adarsh portfolio loaded - ready for interactions');
+  </script>
+</body>
+</html>
